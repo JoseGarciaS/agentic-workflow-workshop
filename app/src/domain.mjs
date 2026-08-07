@@ -16,6 +16,16 @@ function normalizeLabel(label) {
   return String(label ?? '').trim().toLowerCase();
 }
 
+export function topPriority(issues, count) {
+  const limit = Math.max(0, Math.trunc(Number(count)) || 0);
+  return [...issues]
+    .map((issue) => ({ issue, score: scoreIssue(issue) }))
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map(({ issue }) => issue);
+}
+
+
 function issueAgeInDays(createdAt) {
   const createdTime = Date.parse(createdAt);
   if (Number.isNaN(createdTime)) {
