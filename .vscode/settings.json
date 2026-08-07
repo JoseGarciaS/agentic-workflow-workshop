@@ -1,0 +1,10 @@
+{
+  "task.allowAutomaticTasks": "on",
+  "terminal.integrated.defaultLocation": "editor",
+  "files.exclude": {
+    "**/app/node_modules": true
+  },
+  "search.exclude": {
+    "**/app/node_modules": true
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Mona Issue Triage API",
+  "image": "mcr.microsoft.com/devcontainers/base:jammy",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/node:2.0.0": {
+      "version": "22"
+    }
+  },
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Mona Issue API",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/postCreate.sh",
+  "postStartCommand": "bash .devcontainer/postStart.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "github.copilot",
+        "github.copilot-chat"
+      ],
+      "settings": {
+        "task.allowAutomaticTasks": "on",
+        "terminal.integrated.defaultLocation": "editor",
+        "files.exclude": {
+          "**/app/node_modules": true
+        },
+        "search.exclude": {
+          "**/app/node_modules": true
+        }
+      }
+    }
+  }
+}

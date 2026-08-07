@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Mona Issue API: Dev Server",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "node",
+      "args": [
+        "--watch",
+        "src/server.mjs"
+      ],
+      "cwd": "${workspaceFolder}/app",
+      "env": {
+        "PORT": "3000"
+      },
+      "preLaunchTask": "app: install",
+      "serverReadyAction": {
+        "pattern": "3000",
+        "uriFormat": "http://localhost:3000/health",
+        "action": "openExternally"
+      }
+    }
+  ]
+}
