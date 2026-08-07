@@ -42,8 +42,8 @@ Empecemos en el Codespace preconfigurado para este ejercicio. El dev container i
    1. [Crea un fine-grained personal access token](https://github.com/settings/personal-access-tokens/new?name=COPILOT_GITHUB_TOKEN&description=GitHub+Agentic+Workflows+-+Copilot+engine+authentication&user_copilot_requests=read) con **Copilot Requests** en **Read**.
       <details>
         <summary>Detalles de permisos del token</summary><br/>
-        <img width="30%" alt="Fine-grained token permissions 1" src="../images/fine-grained-token-1.png" />
-        <img width="30%" alt="Fine-grained token permissions 2" src="../images/fine-grained-token-2.png" />
+        <img width="30%" alt="Fine-grained token permissions 1" src="https://github.com/JoseGarciaS/agentic-workflow-workshop/blob/main/.github/images/fine-grained-token-1.png?raw=true" />
+        <img width="30%" alt="Fine-grained token permissions 2" src="https://github.com/JoseGarciaS/agentic-workflow-workshop/blob/main/.github/images/fine-grained-token-2.png?raw=true" />
       </details>
    2. Copia el valor del token.
    3. En tu repositorio del ejercicio copiado, ve a **Settings** > **Secrets and variables** > **Actions**.
@@ -52,9 +52,9 @@ Empecemos en el Codespace preconfigurado para este ejercicio. El dev container i
       <details>
         <summary>Detalles de los Action secrets del repositorio</summary><br/>
 
-        <img width="30%" alt="Repository actions secrets 1" src="../images/repo-secrets-1.png" />
-        <img width="30%" alt="Repository actions secrets 2" src="../images/repo-secrets-2.png" />
-        <img width="30%" alt="Repository actions secrets 3" src="../images/repo-secrets-3.png" />
+        <img width="30%" alt="Repository actions secrets 1" src="https://github.com/JoseGarciaS/agentic-workflow-workshop/blob/main/.github/images/repo-secrets-1.png?raw=true" />
+        <img width="30%" alt="Repository actions secrets 2" src="https://github.com/JoseGarciaS/agentic-workflow-workshop/blob/main/.github/images/repo-secrets-2.png?raw=true" />
+        <img width="30%" alt="Repository actions secrets 3" src="https://github.com/JoseGarciaS/agentic-workflow-workshop/blob/main/.github/images/repo-secrets-3.png?raw=true" />
       </details>
 
 > [!CAUTION]
@@ -71,7 +71,7 @@ Empecemos en el Codespace preconfigurado para este ejercicio. El dev container i
    <details>
      <summary>Detalles de los permisos del workflow de Actions</summary><br/>
 
-     <img width="40%" alt="Actions workflow permissions 1" src="../images/actions-permissions-1.png" />
+     <img width="40%" alt="Actions workflow permissions 1" src="https://github.com/JoseGarciaS/agentic-workflow-workshop/blob/main/.github/images/actions-permissions-1.png?raw=true" />
   </details>
 
 7. Inicializa el repositorio con `gh aw` en la terminal.
